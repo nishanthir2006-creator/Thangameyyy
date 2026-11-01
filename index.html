@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Thangameyyy 💗</title>
+
+    <meta name="description" content="A little birthday universe made with love by Thanga kuttyyyy.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+    <source src="assets/music/Kaadhal.mpeg" type="audio/mpeg">
+</audio>
+
+    <button id="musicButton" class="music-button">
+        ♪ Play Our Song ♡
+    </button>
+
+    <!-- Falling Hearts -->
+    <div id="heartsContainer"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="top-label">
+            EST. OUR LITTLE UNIVERSE ♡
+        </div>
+
+        <p class="eyebrow">
+            A TINY SECRET, MADE WITH ALL MY LOVE
+        </p>
+
+        <h1>
+            Hey, Birthday
+            <span>Boy! 🎀</span>
+        </h1>
+
+        <p class="handwriting">
+            Someone made a tiny little world
+            <br>
+            just for you...
+        </p>
+
+        <!-- Envelope -->
+        <div class="envelope-container" id="envelope">
+
+            <div class="letter-preview">
+                For my
+                <strong>Thangameyyy</strong>
+                <small>with love, always</small>
+            </div>
+
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <button class="heart-button" id="openEnvelope">
+                    ♥
+                </button>
+            </div>
+
+        </div>
+
+        <p class="tiny-text">TAP THE ENVELOPE TO OPEN ♡</p>
+
+    </section>
+
+    <!-- WELCOME LETTER POPUP -->
+    <div class="letter-popup" id="welcomeLetterPopup" aria-hidden="true">
+        <div class="letter-popup-backdrop" data-close-letter></div>
+
+        <div class="letter-popup-card" role="dialog" aria-modal="true" aria-labelledby="welcomeLetterTitle">
+            <button class="letter-popup-close" id="closeWelcomeLetter" type="button" aria-label="Close letter">&times;</button>
+
+            <p class="eyebrow">A LITTLE PIECE OF MY HEART 💌</p>
+
+            <h2 id="welcomeLetterTitle">To My One and Only <span>Thangameyyy 😘 </span></h2>
+
+            <div class="handwriting letter-popup-content">
+                <p>If I could give you one thing in this world, it would be the ability to see yourself through my eyes. Maybe then you would understand how special you are to me and how much happiness you bring into my life.</p>
+                <p>You are not just someone I love. You are the person behind my biggest smiles, my silliest happiness, and some of my most beautiful memories.</p>
+                <p>On your special day, I wish you endless happiness, dreams that come true, success in everything you do, and a lifetime filled with beautiful moments.❤️</p>
+                <p>No matter how many birthdays come and go, I hope I get to be there, making you smile, annoying you with my love, and reminding you how precious you are to me.</p>
+                <p>You are my favourite person, my sweetest blessing, and my forever favourite notification. ❤️
+
+Happy Birthday, My Thangameyyy!
+
+With all the love my heart can hold</p>
+            </div>
+
+            <div class="letter-signature">
+                 your
+                <span>Babyy Gurll 😘</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BIRTHDAY MESSAGE -->
+    <section class="birthday-section" id="birthday">
+
+        <p class="section-label">CHAPTER 01 · YOUR DAY</p>
+
+        <p class="eyebrow">
+            TODAY IS ABOUT ONE VERY SPECIAL PERSON
+        </p>
+
+        <h2>
+            Happy Birthday,
+            <span>Thangameyyy ❤️</span>
+        </h2>
+
+        <p class="description">
+            You make ordinary days feel like the most
+            beautiful ones. Today, the whole sky is
+            celebrating you.
+        </p>
+
+        <button class="pink-button" id="magicButton">
+            Look at all that love ✨
+        </button>
+
+        <div class="magic-heart">
+            💗
+        </div>
+
+        <div class="special-message" id="magicMessage">
+            Today, and every day, I'm so lucky it's you. ♡
+        </div>
+
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-section" id="countdown">
+
+        <p class="section-label">A SPECIAL LITTLE COUNTDOWN</p>
+
+        <h2>
+            Counting down to
+            <span>your special day</span>
+        </h2>
+
+        <div class="countdown-container">
+
+            <div class="count-box">
+                <strong id="days">00</strong>
+                <small>Days</small>
+            </div>
+
+            <div class="count-box">
+                <strong id="hours">00</strong>
+                <small>Hours</small>
+            </div>
+
+            <div class="count-box">
+                <strong id="minutes">00</strong>
+                <small>Minutes</small>
+            </div>
+
+            <div class="count-box">
+                <strong id="seconds">00</strong>
+                <small>Seconds</small>
+            </div>
+
+        </div>
+
+        <p class="handwriting">
+            Every second is special because it's yours. 💗
+        </p>
+
+    </section>
+
+    <!-- LOVE LETTER -->
+    <section class="letter-section" id="letter">
+
+        <p class="section-label">CHAPTER 02 · FROM MY HEART</p>
+
+        <div class="letter-card">
+
+            <p class="eyebrow">
+                A LETTER FOR MY FAVORITE PERSON
+            </p>
+
+            <h2>
+                My dearest
+                <span>Thangameyyy,</span>
+            </h2>
+
+            <p class="handwriting letter-content">
+                You are my favorite hello, my safest
+                place, and the person who makes my
+                heart feel at home.
+
+                Thank you for every laugh, every soft
+                moment, and every version of life you
+                let me share with you.
+
+                I love the way we are becoming
+                our own little story. ❤️
+            </p>
+
+            <div class="letter-signature">
+                Forever yours,
+                <span>Thanga kuttyyyy 😘</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- OUR MEMORIES -->
+    <section class="memories-section" id="memories">
+
+        <p class="section-label">CHAPTER 03 · OUR MEMORIES</p>
+
+        <h2>
+            Moments worth
+            <span>keeping. ♡</span>
+        </h2>
+
+        <p class="description">
+            Four little glimpses of my favorite person
+            and our story together.
+        </p>
+
+        <div class="photo-gallery">
+
+            <div class="photo-card">
+                <img src="assets/photos/photo1.jpeg"
+                     alt="Our sweetest memory">
+
+                <h3>Our sweetest hello</h3>
+
+                <p>A little snapshot of my favorite people.</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="assets/photos/photo2.jpeg"
+                     alt="A special memory">
+
+                <h3>Wrapped up in us</h3>
+
+                <p>The kind of moment I want to keep forever.</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="assets/photos/photo3.jpeg"
+                     alt="Our special moment">
+
+                <h3>Hand in hand, always</h3>
+
+                <p>Some memories say everything without words.</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="assets/photos/photo4.jpeg"
+                     alt="My favorite person">
+
+                <h3>My favorite view</h3>
+
+                <p>A tiny piece of our beautiful little story.</p>
+            </div>
+
+        </div>
+
+        <p class="tiny-text">
+            These photos hold pieces of my heart. ♡
+        </p>
+
+    </section>
+
+    <!-- INTERACTIVE TEDDY -->
+    <section class="teddy-section" id="teddy">
+
+        <p class="section-label">A LITTLE HUG FROM ME</p>
+
+        <h2>
+            Sending you
+            <span>infinite hugs 🧸</span>
+        </h2>
+
+        <div class="teddy" id="teddyCharacter">
+            🧸
+        </div>
+
+        <p class="handwriting" id="hugMessage">
+            Your personal teddy is waiting!
+        </p>
+
+        <button class="pink-button" id="hugButton">
+            Send me a hug 🤗
+        </button>
+
+    </section>
+
+    <!-- INTERACTIVE GIFTS -->
+    <section class="gifts-section" id="gifts">
+
+        <p class="section-label">CHAPTER 04 · BIRTHDAY PLAYTIME</p>
+
+        <h2>
+            Pick a little
+            <span>love gesture. 🎁</span>
+        </h2>
+
+        <p class="handwriting">
+            Tap a toy. Each one has a birthday message from me.
+        </p>
+
+        <div class="gift-grid">
+
+            <button class="gift-card" data-message="Sending you the biggest, warmest hug! 🧸🤗">
+                <span>🧸</span>
+                <small>HUG DELIVERY</small>
+            </button>
+
+            <button class="gift-card" data-message="Close your eyes and make your sweetest wish! 🎈">
+                <span>🎈</span>
+                <small>MAKE A WISH</small>
+            </button>
+
+            <button class="gift-card" data-message="A little surprise, wrapped with all my love! 🎁">
+                <span>🎁</span>
+                <small>OPEN A SURPRISE</small>
+            </button>
+
+            <button class="gift-card" data-message="Muaaah! A tiny kiss just for my Thangameyyy! 😘">
+                <span>💋</span>
+                <small>TINY KISS</small>
+            </button>
+
+        </div>
+
+        <div id="giftMessage" class="gift-message">
+            Choose a little gift, my love! 💗
+        </div>
+
+    </section>
+
+    <!-- RELATIONSHIP TIMELINE -->
+    <section class="timeline-section" id="timeline">
+
+        <p class="section-label">OUR LITTLE STORY</p>
+
+        <h2>
+            Every moment,
+            <span>a memory. 💕</span>
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <span>💗</span>
+                <h3>The beginning</h3>
+                <p>Where our beautiful story started.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>🌸</span>
+                <h3>Our favorite memories</h3>
+                <p>All the little moments that became special.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>🧸</span>
+                <h3>Growing together</h3>
+                <p>Learning, laughing and making more memories.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>💍</span>
+                <h3>More chapters to come</h3>
+                <p>Our story is still being written.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DREAMY NIGHT SECTION -->
+    <section class="night-section" id="night">
+
+        <p class="section-label">CHAPTER 05 · AFTER DARK</p>
+
+        <div class="moon">🌙</div>
+
+        <h2>
+            In every universe,
+            <br>
+            I'd still find
+            <span>you.</span>
+        </h2>
+
+        <p class="handwriting">
+            Even under a sky full of stars,
+            you are the one that makes everything glow.
+        </p>
+
+        <button class="light-button" id="secretButton">
+            Open a secret message ✦
+        </button>
+
+        <div id="secretMessage" class="secret-message">
+            My favorite place is wherever you are. ♡
+        </div>
+
+    </section>
+
+    <!-- BIRTHDAY CAKE -->
+    <section class="cake-section" id="cake">
+
+        <p class="section-label">CHAPTER 06 · MAKE A WISH</p>
+
+        <h2>
+            Close your eyes.
+            <br>
+            <span>Make a wish.</span>
+        </h2>
+
+        <p class="handwriting">
+            Tap the button and let every candle
+            carry a little bit of love to the stars.
+        </p>
+
+        <div class="cake">
+            <div class="candles">
+                <span>🕯️</span>
+                <span>🕯️</span>
+                <span>🕯️</span>
+            </div>
+
+            <div class="cake-top"></div>
+            <div class="cake-bottom"></div>
+        </div>
+
+        <button class="dark-button" id="blowButton">
+            Blow out the candles 🕯️
+        </button>
+
+        <p id="cakeMessage" class="handwriting"></p>
+
+    </section>
+
+    <!-- FINAL SURPRISE -->
+    <section class="final-section" id="final">
+
+        <p class="section-label">
+            CHAPTER 07 · JUST ONE MORE THING
+        </p>
+
+        <h2>
+            Open your last
+            <span>surprise. 💌</span>
+        </h2>
+
+        <button class="final-envelope" id="finalEnvelope">
+            <span>OPEN ME ♡</span>
+        </button>
+
+        <div class="final-letter" id="finalLetter">
+
+            <h3>Thangameyyy ❤️😘</h3>
+
+            <p>
+                If I could give you one thing, it would
+                be the ability to see yourself through
+                my eyes — so you could understand just
+                how deeply, completely, and endlessly
+                you are loved.
+            </p>
+
+            <p>
+                Thank you for being my favorite person.
+                I'll choose you in every universe,
+                in every lifetime, in every little
+                ordinary day.
+            </p>
+
+            <h3>Happy Birthday, My Favorite Person. ❤️</h3>
+
+            <p class="handwriting">
+                Made with all my love, just for you.
+            </p>
+
+            <h2>Thanga kuttyyyy 😘</h2>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Made with ♡ by Thanga kuttyyyy</p>
+        <p>For my Thangameyyy, forever and always.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <!-- FULL-SIZE PHOTO VIEWER -->
+<div class="photo-viewer" id="photoViewer">
+
+    <button class="photo-viewer-close"
+            id="closePhotoViewer"
+            type="button"
+            aria-label="Close photo">&times;</button>
+
+    <img id="fullSizePhoto"
+         src=""
+         alt="Full-size memory">
+
+</div>
+
+</body>
+</html>
